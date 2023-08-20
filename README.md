@@ -1,4 +1,4 @@
-"# helloRust" 
+"# hello_rust" 
 
 Work done
 - command "cargo new"
