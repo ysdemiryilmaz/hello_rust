@@ -6,3 +6,4 @@ Work done
 - command "cargo build"
 - command "cargo check"
 - command "cargo run"
+- command "cargo build --release"
