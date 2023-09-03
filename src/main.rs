@@ -16,8 +16,8 @@ fn main() {
     assert_eq!(a, 3);
     println!("Success! 2");
 
-    let k = 3;
-    let l = 5;
+    let k: i32 = 3;
+    let l: i32 = 5;
     {
         println!("INNER SCOPE --> The value of k is {} and the value of l is {}", k, l);
     }
@@ -28,7 +28,7 @@ fn main() {
 }
 
 fn define_x() {
-    let x = "Hello!";
+    let x: &str = "Hello!";
     println!("New function {}", x);
 }
 
