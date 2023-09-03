@@ -22,4 +22,11 @@ fn main() {
         println!("INNER SCOPE --> The value of k is {} and the value of l is {}", k, l);
     }
     println!("OUTER SCOPE --> The value of k is {} and the value of l is {}", k, l);
+
+    define_x();
+}
+
+fn define_x() {
+    let x = "Hello!";
+    println!("New function {}", x);
 }
