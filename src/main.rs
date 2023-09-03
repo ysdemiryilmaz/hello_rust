@@ -15,4 +15,11 @@ fn main() {
 
     assert_eq!(a, 3);
     println!("Success! 2");
+
+    let k = 3;
+    let l = 5;
+    {
+        println!("INNER SCOPE --> The value of k is {} and the value of l is {}", k, l);
+    }
+    println!("OUTER SCOPE --> The value of k is {} and the value of l is {}", k, l);
 }
