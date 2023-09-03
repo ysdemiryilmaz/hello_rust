@@ -24,9 +24,20 @@ fn main() {
     println!("OUTER SCOPE --> The value of k is {} and the value of l is {}", k, l);
 
     define_x();
+    shadowing_x();
 }
 
 fn define_x() {
     let x = "Hello!";
     println!("New function {}", x);
+}
+
+fn shadowing_x() {
+    let x: i32 = 5;
+    {
+        let x: i32 = 10;
+        assert_eq!(x, 10);
+    }
+    assert_eq!(x, 5);
+    println!("Shadowing successfull!");
 }
