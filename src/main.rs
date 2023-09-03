@@ -6,6 +6,6 @@ fn main() {
     println!("{:#?}", now);
 
     let x: i32 = 5;
-    assert_eq!(x, 5); // if not, program will panic
+    assert_eq!(x, 5); // if not equal, program will panic
     println!("Success!")
 }
